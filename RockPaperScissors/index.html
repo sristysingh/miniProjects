@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/88e102062a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ROCK PAPAER SCISSORS</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Rock Paper Scissors</h1>
+            <button id="restart" class="restart">Restart Game</button>
+            <div class="score" id="score">
+                <p>Player: 0</p>
+                <p>Computer: 0</p>
+            </div>
+        </header>
+        <h2>Make Your Selection</h2>
+        <div class="choices">
+            <i id="rock" class="choice fa-solid fa-hand-back-fist fa-10x"></i>
+            <i id="paper" class="choice fa-solid fa-hand fa-10x"></i>
+            <i id="scissor" class="choice fa-solid fa-hand-scissors fa-10x"></i>
+        </div>
+    </div>
+
+    <!-------- modal  ------>
+    <div class="modal">
+        <div id="result" class="modal-content">
+            <h1 class="text-win">You Win</h1>
+            <i class=" choice fa-solid fa-hand fa-10x"></i>
+            <p>Computer Chose Paper</p>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
