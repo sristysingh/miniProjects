@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    background-color: rgb(198, 217, 253);
+}
+
+.listContainer{
+    margin-top: 50px;
+    
+}
+#searchBox, #searchBtn{
+    padding:0.51rem;
+    border-radius: 5px;
+    font-size: 15px;
+}
