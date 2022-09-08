@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+h2{
+    color: rgb(24, 24, 48);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.underline{
+    margin-top: 0.5rem;
+    width: 100px;
+    border-bottom: 3px solid rgb(36, 134, 239);
+}
+
+.review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem 2rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0.5px rgb(183, 181, 181);
+
+}
+.img-container{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(95, 193, 239);
+}
+.quote{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(95, 193, 239);
+    color: white;
+    position: relative;
+    top: 10px;
+    right: 20px;
+    z-index: 2;
+}
+img{
+    position: relative;
+    bottom: 35px;
+    right: 8px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: 100%;
+}
+#author{
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#job{
+    margin-top: 0.4rem;
+    margin-bottom: 0.7rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(57, 184, 243) ;
+}
+#info{
+    width: fit-content;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.prev-btn{
+    all: unset;
+    color: rgb(57, 184, 243);
+    cursor: pointer;
+}
+.next-btn{
+    all: unset;
+    margin-left: 1rem;
+    color: rgb(57, 184, 243);
+    cursor: pointer;
+}
+.random-btn{
+    margin-top: 0.5rem;
+    background-color:aliceblue ;
+    color:rgb(16, 172, 244);
+    border: 2px solid rgb(57, 184, 243) ;
+    border-radius: 5px;
+    padding: 3px 2px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
