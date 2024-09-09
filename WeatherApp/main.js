@@ -66,9 +66,6 @@ window.addEventListener("load", () => {
             let long = position.coords.longitude;
             let lat = position.coords.latitude;
                             //const proxy = "https://cors-anywhere.herokuapp.com/";
-                            //const api = `${proxy}api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=ad3e0b510c716a503e20563b9aee8fb6`
-                            //const api = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=ad3e0b510c716a503e20563b9aee8fb6`,
-                            //{mode: 'cors'});
             fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=ad3e0b510c716a503e20563b9aee8fb6`,
             {mode: 'cors'}).then((response) => {
                 return response.json();
@@ -103,11 +100,14 @@ window.addEventListener("load", () => {
                 {
                     tempicon.src ="./icons/clouds.svg"
                 }
-                else (id==800)
+                else if (id==800)
                 {
                     tempicon.src ="./icons/cloud-and-sun.svg"
                 }
                 })
+                .catch((error) => {
+                    console.log(error);
+                });
         })
     }
 })
